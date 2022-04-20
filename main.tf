@@ -7,9 +7,9 @@ terraform {
 }
 provider "google" {
   version = "3.5.0"
-  project = "qwiklabs-gcp-01-6de22fb58316"
-  region  = "europe-west3"
-  zone    = "europe-west3"
+  project = "qwiklabs-gcp-00-04386a91e806"
+  region  = "us-central1"
+  zone    = "us-central1-c"
 }
 resource "google_compute_network" "vpc_network" {
   name = "terraform-network"
@@ -42,7 +42,7 @@ resource "google_compute_address" "vm_static_ip" {
 
 # New resource for the storage bucket our application will use.
 resource "google_storage_bucket" "example_bucket" {
-  name     = "bucket-qwiklabs-gcp-01-6de22fb58316"
+  name     = "bucket-qwiklabs-gcp-00-04386a91e806"
   location = "EU"
   website {
     main_page_suffix = "index.html"
