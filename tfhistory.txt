@@ -1,0 +1,15 @@
+    1  gcloud auth list
+    2  gcloud config list project
+    3  terraform --version
+    4  mkdir tfinfra
+    5  cd tfinfra
+    6  terraform init
+    7  ls
+    8  ls -l
+    9  cat mynetwork.tf 
+   10  terraform 
+   11  terraform fmt
+   12  terraform init
+   13  terraform  plan
+   14  terraform  apply
+   15  history --> tfhistory.txt
